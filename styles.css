@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Styles for the darkened background */
+.firstPage {
+  position: relative;
+  height: 100vh;
+  background-image: url("./images/pexels-josh-hild-4270292.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.firstPage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+h4 {
+  position: relative;
+  z-index: 1;
+  color: rgba(255, 255, 255, 0.877);
+  font-size: 24px;
+  text-align: center;
+  padding: 50px;
+  font-weight: bold;
+  font-size: 6rem;
+
+  padding-top: 10%;
+}
+
+h1 {
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 10rem;
+}
+
+.navBar {
+  position: relative;
+  color: white;
+  z-index: 10;
+  display: flex;
+
+  font-weight: 300;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 0.5px white solid;
+}
+.navBar:hover {
+  border-bottom: 1px grey solid;
+  transition-duration: 0.3;
+}
+.nav-item {
+  margin-right: 50px;
+  margin-top: 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-item:hover {
+  transform: translate(1px, 1px);
+  color: rgb(246, 248, 103);
+}
+
+#about {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("./images/aboutme.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+p {
+  color: white;
+  font-size: larger;
+  padding-top: 20px;
+}
+
+.text-about {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  width: 50vw;
+  padding: 20px;
+  color: white;
+  margin-right: 20px;
+  text-align: center;
+}
+
+#coverLayer {
+  margin-left: 200px;
+  margin-right: 200px;
+
+  background-color: rgba(0, 0, 0, 0.133);
+}
+.iconContainer {
+  margin-left: 25%;
+  position: relative;
+}
+.iconContainer img {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-left: 100px;
+}
+.indi-card {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+#projects {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("./images/aboutme.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+#projects::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+button {
+  padding: 10px;
+  background-color: rgb(71, 69, 69);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+button:hover {
+  transform: translate(1px, 1px);
+  transition-delay: 0.2s;
+  box-shadow: 5px 5px 5px rgb(42, 41, 41);
+}
+
+#project-title {
+  padding-bottom: 50px;
+  text-align: center;
+  font-size: x-large;
+}
+
+.text-contact {
+  position: relative;
+  width: 50vw;
+  padding: 20px;
+  color: white;
+  margin-right: 20px;
+}
+
+a {
+  color: inherit;
+}
+
+#back-to-top-link {
+  margin-top: 50px;
+  font-size: 20px;
+  bottom: 0;
+}
+#back-to-top-link:hover {
+  cursor: pointer;
+}
