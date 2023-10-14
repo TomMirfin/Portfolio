@@ -212,7 +212,7 @@ a {
   cursor: pointer;
 }
 
-@media all and (min-width: 385px) {
+@media all and (min-width: 350px) {
   .firstPage {
     position: relative;
     height: 100vh;
@@ -229,7 +229,10 @@ a {
   }
 
   .text-about {
-    font-size: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    color: white;
+    text-align: center;
   }
   #coverLayer h1 {
     display: flex;
@@ -253,9 +256,7 @@ a {
     height: 50px;
     margin-left: 60px;
   }
-  #coverLayer {
-    background-color: rgba(0, 0, 0, 0.133);
-  }
+
   #skillset-box h4 {
     margin-top: 150px;
     font-size: 40px;
@@ -274,5 +275,58 @@ a {
   #about {
     display: flex;
     flex-direction: column;
+  }
+}
+@media all and (min-width: 1080px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  #coverLayer h1 {
+    display: flex;
+    font-size: 200px;
+    padding-left: 50px;
+  }
+  #coverLayer {
+    margin: 10px;
+  }
+  .nav-item {
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 60px;
+  }
+  h4 {
+    font-size: 120px;
+  }
+  .text-about {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    color: white;
+    text-align: center;
+    width: 100vw;
+  }
+  #skillset-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #skillset-box h4 {
+    padding-top: 550px;
+    font-size: 120px;
+  }
+  .iconContainer img {
+    padding-right: 320px;
+    padding-top: 50px;
+    width: 10rem;
+    height: 10rem;
+  }
+  .text-about p {
+    font-size: 35px;
+    padding: 50px;
+    text-wrap: wrap;
+  }
+  #back-to-top-link {
+    font-size: 40px;
   }
 }
