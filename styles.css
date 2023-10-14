@@ -10,7 +10,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Styles for the darkened background */
 .firstPage {
   position: relative;
   height: 100vh;
@@ -136,10 +135,12 @@ p {
   position: relative;
 }
 .iconContainer img {
-  position: relative;
+  position: flex;
+  align-items: center;
+  justify-content: center;
   width: 100px;
   height: 100px;
-  margin-left: 100px;
+  margin-left: 10%;
 }
 .indi-card {
   align-items: center;
@@ -212,7 +213,7 @@ a {
   cursor: pointer;
 }
 
-@media all and (min-width: 350px) {
+/* @media all and (min-width: 350px) {
   .firstPage {
     position: relative;
     height: 100vh;
@@ -329,4 +330,4 @@ a {
   #back-to-top-link {
     font-size: 40px;
   }
-}
+} */
